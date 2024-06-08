@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body style="width: 70%; margin: 0 auto">
+    <!-- header -->
+    <header>
+      <h1
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        "
+      >
+        This is a student Registration Form Project using simply HTML.
+      </h1>
+    </header>
+    <hr />
+    <br />
+    <br />
+    <!-- main -->
+    <main>
+      <h2>Student Registration Form</h2>
+      <p>Please fill out from below to register.</p>
+      <hr />
+      <form action="/submit" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="first-name">First Name:</label>
+          <input type="text" name="first-name" required /><br /><br />
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" name="last-name" required /><br /><br />
+
+          <label for="date-of-birth">Date of Birth:</label>
+          <input type="date" name="date-of-birth" required /><br /><br />
+
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="gender" value="other" />
+          <label for="other">Other</label><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br /><br />
+
+          <label for="Phone">Phone:</label>
+          <input
+            type="number"
+            name="Phone"
+            placeholder="Phone Number"
+            required
+          /><br /><br />
+        </fieldset>
+        <hr />
+
+        <!-- Address Information -->
+        <fieldset>
+          <legend>Address Information</legend>
+
+          <label for="address">Address:</label><br />
+          <textarea name="address" rows="5" cols="50" required></textarea
+          ><br /><br />
+
+          <label for="city">City:</label>
+          <input type="text" name="city" required /><br /><br />
+
+          <label for="state">State:</label>
+          <input type="text" name="sity" required /><br /><br />
+
+          <label for="zip">ZIP Code:</label>
+          <input type="text" name="zip" required /><br /><br />
+        </fieldset>
+        <hr />
+        <br />
+
+        <!-- Educational Information -->
+        <fieldset>
+          <legend>Educational Information</legend>
+
+          <label for="high-school">High School:</label>
+          <input type="text" name="high-school" required /><br /><br />
+
+          <label for="gpa">GPA:</label>
+          <input type="number" name="gpa" required /><br /><br />
+
+          <label for="intended-major">Intended Major:</label>
+          <input type="text" name="intended-major" required /><br /><br />
+
+          <label for="year-of-graduation">Year Of Graduation:</label>
+          <input type="number" name="high-school" required /><br /><br />
+        </fieldset>
+        <hr />
+
+        <!-- Additional Information -->
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <label for="interests-and-hobbies">Interests and Hobbies:</label
+          ><br />
+          <textarea name="interests-and-hobbie" rows="5" cols="50"></textarea
+          ><br /><br />
+
+          <label for="additional-comments">Additional Comments:</label><br />
+          <textarea name="additional-comments" rows="5" cols="50"></textarea
+          ><br /><br />
+        </fieldset>
+        <hr />
+        <input
+          type="submit"
+          value="Register"
+          style="border-radius: 3px"
+        /><br />
+        <hr />
+      </form>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2024 Student Registration.All rights reserved</p>
+    </footer>
+  </body>
+</html>
